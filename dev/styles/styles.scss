@@ -1,0 +1,21 @@
+@import "setup";
+@import "colours";
+@import "typography";
+
+.petMenu {
+    background: yellow;
+    .petMenuItem {
+        background: tomato;
+        li {
+            display: inline-block;
+            margin-right: 20px;
+            padding: 20px 0;
+            background: skyblue;
+            
+            img {
+                width: 300px;
+                padding: 0;
+            }
+        }
+    }
+}

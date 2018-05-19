@@ -1,0 +1,31 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    color: $black;
+}
+p {
+    line-height: 1.8;
+}
+main {
+    color: $black;
+}
+h1 {
+    text-align: center;
+    font-size: 70px;
+    text-transform: uppercase;
+    color: $accent;
+    line-height: 43px;
+}
+h2 {
+    color: $white;
+    text-align: center;
+    font-size: 40px;
+}
+h3 {
+    color: $accent;
+    border-bottom: solid 1px $accent;
+    font-size: 25px;
+}
+a {
+    text-decoration: none;
+    color: $accent;
+}
