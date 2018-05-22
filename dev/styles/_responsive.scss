@@ -1,0 +1,33 @@
+@media screen and (max-width:820px) {
+    #petCreate {
+        input[type=text]  {
+            width: 100%;
+            margin-right: 0px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        input[type=submit] {
+            width: 100%;
+        }
+    }
+}
+@media screen and (max-width:540px) {
+    .hideButton {
+        display: none;
+    }
+    #petCreate {
+        width: 80%;
+    }
+}
+@media screen and (max-width:400px) {
+    body {
+        font-size: 25px;
+    }
+    .menuContainer {
+        .petInfo {
+            .feedButton {
+                display: none;
+            }
+        }
+    }
+}

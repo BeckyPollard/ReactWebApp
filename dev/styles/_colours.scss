@@ -1,5 +1,9 @@
-$black: #333;
-$white: #F1F0EB;
-$accent: #82c95b;
-$accentL: lighten($accent, 5%);
-$main: #ffca76;
+$dark: #47443b;
+$medium: #827f70;
+$light: #c9c5aa;
+
+$gradient: linear-gradient(180deg, $light 0%, $light 50%, $medium 50%, $medium 100%);
+
+$borderSM: solid 3px $dark;
+$borderSMM: solid 3px $medium;
+$border2: double 10px $dark;

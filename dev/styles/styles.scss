@@ -2,20 +2,93 @@
 @import "colours";
 @import "typography";
 
-.petMenu {
-    background: yellow;
-    .petMenuItem {
-        background: tomato;
-        li {
-            display: inline-block;
-            margin-right: 20px;
-            padding: 20px 0;
-            background: skyblue;
-            
-            img {
-                width: 300px;
-                padding: 0;
-            }
+.hidden {
+    display: none;
+}
+
+button, input {
+    background: $light;
+    border: $borderSM;
+}
+button, input[type=submit] {
+    &:hover {
+        background: $medium;
+        color: $light;
+    }
+}
+.tabButton {
+    border-bottom: 0px;
+}
+.activeButton {
+    background: $medium;
+    color: $light;
+}
+
+body {
+    background: $light;
+}
+.wrapper {
+    max-width: 800px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+.menu {
+    padding: 20px;
+    position: relative;
+    button {
+        margin-right: 20px;
+    }
+    .petMenuItem, .petCreate {
+        margin-bottom: 20px;
+        border: $border2;
+        padding: 20px 20px;
+    }
+}
+.menuContainer {
+    .petInfo {
+        display: flex;
+        align-items: center;
+        .petView {
+            background: $gradient;
+            border: $borderSM;
+            padding: 10px;
+            max-width: 60px;
+            max-height: 60px;
+        }
+        ul {
+            margin-left: 20px;
+        }
+        .feedButton {
+            position: absolute;
+            right: 30px;
         }
     }
 }
+#petCreate {
+    background: $light;
+    width: 60%;
+    max-width: 600px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border: $borderSM;
+    input[type=text], input[type=submit]{
+        height: 40px;
+        padding: 0 10px;
+    }
+    input[type=text]  {
+        width: calc(70% - 10px);
+        margin-right: 20px;
+        &:required {
+            outline: none;
+            box-shadow: 0px;
+            border: $borderSM;
+        }
+    }
+    input[type=submit] {
+        width: calc(30% - 10px);
+    }
+}
+@import "responsive";

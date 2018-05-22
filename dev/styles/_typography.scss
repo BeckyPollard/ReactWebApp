@@ -1,31 +1,29 @@
-body {
-    font-family: 'Roboto', sans-serif;
-    color: $black;
-}
-p {
-    line-height: 1.8;
-}
-main {
-    color: $black;
-}
+$OpenSans: 'Roboto', sans-serif;
+$VT323: 'VT323', monospace;
 h1 {
+    font-size: 50px;
+    margin-top: 20px;
+    line-height: 30px;
     text-align: center;
-    font-size: 70px;
-    text-transform: uppercase;
-    color: $accent;
-    line-height: 43px;
 }
 h2 {
-    color: $white;
+    font-size: 35px;
+    line-height: 40px;
+    display: block;
+    color: $light;
     text-align: center;
-    font-size: 40px;
+    background: $medium;
+        margin-bottom: 10px;
+        overflow: hidden;
+        height: 40px;
 }
-h3 {
-    color: $accent;
-    border-bottom: solid 1px $accent;
-    font-size: 25px;
+
+body, input, button {
+    color: $dark;
+    text-transform: uppercase;
 }
-a {
-    text-decoration: none;
-    color: $accent;
+
+body {
+    font-family: $VT323;
+    font-size: 30px;
 }
